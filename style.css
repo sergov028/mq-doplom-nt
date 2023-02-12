@@ -1,0 +1,818 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 100%;
+  max-width: 1660px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container.main {
+  display: flex;
+  padding: 64px 15px;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("OpenSans-Regular"),
+    url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("OpenSans-Bold"),
+    url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+/* Шапка */
+
+.header {
+  padding: 28px 0 12px;
+
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-color: #999;
+
+  position: relative;
+  z-index: 0;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.container-menu {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container-title {
+  width: 687px;
+  margin: 0 auto;
+  padding: 108px 0;
+  text-align: center;
+}
+
+.header-logo {
+  width: 179px;
+  height: 40px;
+}
+
+/* Навигационное меню */
+
+.menu {
+  margin-left: auto;
+}
+
+.menu-list {
+  display: flex;
+  margin: 0;
+}
+
+.menu-list-item {
+  margin-left: 35px;
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.menu-link {
+  color: #ffffff;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+/* Заголовок */
+
+.title-header {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-style: normal;
+  font-size: 45px;
+
+  line-height: 75px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*Тренды*/
+
+.trends {
+  padding-top: 56px;
+}
+
+.trend-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: normal;
+  color: #0f0d0e;
+}
+
+.trend-title:after {
+  content: "";
+  display: block;
+  width: 3.25em;
+  margin: 8px auto 28px;
+  border-bottom: 3px solid #b59f5b;
+}
+
+.container-trends {
+  max-width: 1660px;
+  display: flex;
+  min-height: 319px;
+  margin: 0 auto;
+}
+
+.card-trend {
+  display: flex;
+  width: 25%;
+  padding: 0 1.25em 1em;
+  align-items: flex-end;
+}
+
+.card-trend:nth-child(n + 2) {
+  margin-left: 3px;
+}
+
+.card-trend:after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #0f0d0e;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.card-content {
+  padding: 2.25em 2em 2em;
+  border: 0.2em solid #b59f5b;
+}
+
+.title-trend {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-top: 0.4em;
+}
+
+.trend-link {
+  color: #fff;
+}
+
+.trend_1 {
+  background-image: url(/Images/trend1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+.trend_2 {
+  background-image: url(/Images/trend2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+.trend_3 {
+  background-image: url(/Images/trend3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+.trend_4 {
+  background-image: url(/Images/trend4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+/* Основной контент */
+
+.post {
+  display: flex;
+}
+
+.post:nth-child(n + 2) {
+  margin-top: 59px;
+}
+
+.post-img {
+  width: 381px;
+  position: relative;
+}
+
+.post-img:after {
+  content: "";
+  position: absolute;
+
+  width: 294px;
+  height: 381px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #eff6f1;
+  opacity: 0.9;
+}
+
+.post-info {
+  margin-left: 30px;
+  width: 367px;
+
+  box-sizing: border-box;
+}
+
+.title-post {
+  margin: 6px 0 20px;
+
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+
+  line-height: 24px;
+  color: #0f0d0e;
+}
+
+.post-content {
+  margin-top: 33px;
+}
+
+.post-text {
+  margin-top: 46px;
+
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+
+  line-height: 22px;
+  color: #0f0d0e;
+}
+
+.card-tags {
+  display: flex;
+  font-weight: bold;
+  font-size: 0.88rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.card-tag-item {
+  margin-right: 20px;
+  color: #b59f5b;
+}
+
+.post-date {
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  color: #888888;
+}
+
+.author {
+  margin-left: 14px;
+
+  font-weight: bold;
+  font-size: 12px;
+  font-style: normal;
+  color: #000000;
+}
+
+/* Боковая панель */
+
+.side-bar {
+  width: 272px;
+  margin-left: auto;
+}
+
+.new-post-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.new-post-content:nth-of-type(n + 2) {
+  margin-top: 22px;
+}
+
+.img-new-post {
+  width: 70px;
+}
+
+.title-new-post {
+  margin-left: 18px;
+}
+
+.header-new-post {
+  text-align: center;
+  margin: -3px 0 28px 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  color: #0f0d0e;
+}
+
+.header-new-post:after {
+  content: "";
+  display: block;
+  width: 65px;
+  margin: 8px auto 0;
+  border-bottom: 3px solid #b59f5b;
+}
+
+.new-post-text {
+  margin-top: 2px;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+
+  line-height: 18px;
+  color: #000000;
+}
+
+.new-post-link:hover {
+  color: #b59f5b;
+}
+
+.new-post-date {
+  display: block;
+  margin-top: -4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  color: #888888;
+}
+
+/* Поиск */
+
+.search-new-post {
+  margin-top: 60px;
+  padding: 0 1px;
+}
+
+.search-field {
+  box-sizing: border-box;
+  width: 222px;
+  height: 48px;
+
+  padding: 18px;
+
+  border-style: none;
+  background-color: #f4f7f6;
+  font-family: inherit;
+}
+
+.search-field:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.search-btn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-size: 18px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #b59f5b;
+  border-style: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #323232;
+}
+
+/* Подписка */
+
+.subscribe {
+  margin-top: 60px;
+}
+
+.subscribe-header {
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  color: #0f0d0e;
+}
+
+.subscribe-header:after {
+  content: "";
+  display: block;
+  width: 65px;
+  margin: 8px auto 0;
+  border-bottom: 3px solid #b59f5b;
+}
+
+.email-field {
+  box-sizing: border-box;
+  width: 270px;
+  height: 48px;
+  margin: 23px 1px 16px;
+  padding: 18px;
+
+  border-style: none;
+  font-family: inherit;
+  background-color: #f4f7f6;
+}
+
+.email-field:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.subscribe-btn {
+  display: inline-block;
+  width: 270px;
+  height: 48px;
+
+  border-style: none;
+  background-color: #b59f5b;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #323232;
+}
+
+/* Теги */
+
+.tags-header {
+  text-align: center;
+  margin: 59px 0 16px 0;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  color: #0f0d0e;
+}
+
+.tags-header:after {
+  content: "";
+  display: block;
+  width: 65px;
+  margin: 8px auto 0;
+  border-bottom: 3px solid #b59f5b;
+}
+
+.tag-list {
+  margin: 0;
+  padding: 0;
+}
+
+.tag-item {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 13px;
+  margin: 0 4px 6px 0;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: normal;
+  color: #0f0d0e;
+  border: 3px solid #f4f3f1;
+}
+
+.tag-item:hover {
+  border: 3px solid #b59f5b;
+}
+
+/* Категори */
+
+.categories-title {
+  text-align: center;
+  margin: 50px 0 10px;
+
+  font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  color: #0f0d0e;
+}
+
+.categories-title:after {
+  content: "";
+  display: block;
+  width: 65px;
+  margin: 8px auto 0;
+  border-bottom: 3px solid #b59f5b;
+}
+
+.category-item {
+  display: block;
+  box-sizing: border-box;
+  height: 47px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0px;
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+.topic-link {
+  font-size: 14px;
+  color: #000;
+}
+
+.count-category {
+  font-size: 12px;
+  color: #b59f5b;
+  vertical-align: text-top;
+}
+
+.topic-link:hover {
+  color: #b59f5b;
+}
+
+/* Товары */
+
+.title-shop {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0f0d0e;
+}
+
+.title-shop:after {
+  content: "";
+  display: block;
+  width: 3.25em;
+  margin: 8px auto 28px;
+  border-bottom: 3px solid #b59f5b;
+}
+
+.container-products {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0 23px;
+}
+
+.card-product {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-body {
+  outline: 3px solid #b59f5b;
+  outline-offset: 20px;
+  position: relative;
+  padding: 35px 0 5px;
+  top: -55px;
+  flex-grow: 1;
+}
+
+.product-content {
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.product-link {
+  color: #0f0d0e;
+}
+.product-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #0f0d0e;
+}
+
+.description-link {
+  color: #b59f5b;
+}
+
+.description-link:hover {
+  text-decoration: underline;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.product-price {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 0.5;
+  color: #0f0d0e;
+  margin-bottom: 10px;
+}
+
+.product-price-old {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #0f0d0e;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.product-rub {
+  margin-left: 0.35em;
+}
+
+.link-buy {
+  font-size: 14px;
+  line-height: 2.85;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+
+  background-color: #b59f5b;
+  padding: 4px 2em;
+}
+
+.link-buy:hover {
+  background-color: #323232;
+}
+/* Подвал */
+
+.articles-socials {
+  display: flex;
+  padding: 32px 0;
+  justify-content: center;
+
+  background-color: #f4f7f6;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-dribbble {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+}
+
+.social-link-pinterest {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+}
+
+.social-link-tumblr {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.socials-item:nth-child(n + 2) {
+  margin-left: 25px;
+}
+
+.copyright-text {
+  margin: 70px 0 38px;
+  text-align: center;
+}
+
+.copyright-link {
+  font-weight: bold;
+  font-size: 12px;
+  font-style: normal;
+  color: #999;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0d0e;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+}
+
+.popup-body {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  color: #0f0d0e;
+  opacity: 1;
+  max-width: 300px;
+}
